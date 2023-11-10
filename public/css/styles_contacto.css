@@ -1,0 +1,225 @@
+/* Estilo del Header  */
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  size: 30%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.header {
+  margin-top: 0px;
+  position: fixed;
+  z-index: 2;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.navbar ul {
+  list-style-type: none;
+  background-color: #ff0000;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.navbar a {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-decoration: none;
+  background-color: #ff0000;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+}
+
+.navbar a:hover {
+  background-color: rgb(250, 192, 0);
+}
+
+.navbar li {
+  float: left;
+}
+
+/* Estilo del Body y de Contacto */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contacto {
+  padding-top: 150px;
+  margin-left: 25px;
+}
+
+.contacto h1,
+p {
+  text-align: center;
+}
+
+.contacto h1 {
+  font-weight: 800;
+  font-size: 35px;
+}
+
+/* Estilo del Formulario */
+
+form {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: rgb(250, 192, 0);
+  color: #000000;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background-color: #ff0000;
+}
+
+.boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.boton button {
+  margin-right: 10px;
+}
+
+/* Estilo del Footer */
+
+li {
+  float: left;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.footer {
+  font-family: "Kanit", sans-serif;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.container_final {
+  padding: 20px;
+}
+
+.container_final {
+  display: flex;
+  background-color: #ffcc00;
+}
+
+.container_final img {
+  width: 125px;
+}
+
+.container_final h1,
+p {
+  text-align: left;
+  margin-left: 25px;
+}
+
+.container_icons {
+  display: flex;
+}
+
+.container_social {
+  display: flex;
+}
+
+.container_social img {
+  width: 20px;
+  margin: 5px;
+}
+
+.container_app {
+  display: flex;
+  justify-content: end;
+  padding-right: 35px;
+  margin-left: 830px;
+}
+
+.container_app img {
+  width: 110px;
+  height: 40px;
+  margin: 5px;
+}
+
+.container_final_footer {
+  display: flex;
+}
+
+.navbar_footer {
+  display: flex;
+  justify-content: start;
+}
+.navbar_footer a {
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+}
+
+.logo_footer {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-left: 628px;
+}
+
+.logo_footer img {
+  width: 45px;
+}
+
+.logo_footer h5 {
+  font-weight: 600;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media only screen and (max-width: 600px) {
+  form {
+    padding: 15px;
+  }
+  input,
+  textarea {
+    padding: 8px;
+  }
+  button {
+    padding: 10px 20px;
+  }
+}

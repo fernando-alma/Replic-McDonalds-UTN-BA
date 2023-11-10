@@ -1,0 +1,294 @@
+
+    
+   
+   <!--
+      PRIMER INTENTO DE SLIDER
+
+      <section class="container">
+      <div class="slider-wrapper">
+        <div class="slider">
+          <img
+            id="slide-1"
+            src="./public/assets/img/HERO_MD_01.jpg"
+            alt="Imágen con promo Grand Tasty TURBO BACON"
+          />
+          <img
+            id="slide-2"
+            src="./public/assets/img/HERO_MD_02.jpg"
+            alt="Imágen con promo BACON CHEDDAR McMELT"
+          />
+          <img
+            id="slide-3"
+            src="./public/assets/img/HERO_MD_03.jpg"
+            alt="Imágen con promo Grand Tasty PURO SABOR SIN FILTRO"
+          />
+        </div>
+        <div class="slider-nav">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- ÚLTIMO INTENTO DE SLIDER -->
+
+    <section class="container">
+      <div class="slider-wrapper">
+        <div class="slider">
+          <img
+            id="slide-1"
+            src="./public/assets/img/HERO_MD_01.jpg"
+            alt="Imágen con promo Grand Tasty TURBO BACON"
+          />
+          <img
+            id="slide-2"
+            src="./public/assets/img/HERO_MD_02.jpg"
+            alt="Imágen con promo BACON CHEDDAR McMELT"
+          />
+          <img
+            id="slide-3"
+            src="./public/assets/img/HERO_MD_03.jpg"
+            alt="Imágen con promo Grand Tasty PURO SABOR SIN FILTRO"
+          />
+        </div>
+        <div class="slider-nav">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+        </div>
+      </div>
+    </section>
+   
+    <!--
+      ESTE CÓDIGO FUÉ EL SEGUNDO INTENTO DE SLIDER
+      
+      <section>
+      <div class="slider-frame">
+        <ul>
+          <li>
+            <img
+              id="slide-1"
+              src="./public/assets/img/HERO_MD_01.jpg"
+              alt="Imágen con promo Grand Tasty TURBO BACON"
+            />
+          </li>
+          <li>
+            <img
+              id="slide-2"
+              src="./public/assets/img/HERO_MD_02.jpg"
+              alt="Imágen con promo BACON CHEDDAR McMELT"
+            />
+          </li>
+          <li>
+            <img
+              id="slide-3"
+              src="./public/assets/img/HERO_MD_03.jpg"
+              alt="Imágen con promo Grand Tasty PURO SABOR SIN FILTRO"
+            />
+          </li>
+        </ul>
+      </div>
+    </section> -->
+
+
+
+
+
+
+
+    AQUÍ COMIENZA EL STYLESSHEET
+
+    
+
+
+
+/* .container {
+  padding: 0px;
+}
+
+.slider-wrapper {
+  position: relative;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 16 / 9;
+  overflow-x: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  
+  El primer valor es el desplazamiento X, el segundo en Y, el tercero el Desenfoque,
+   el cuarto la Extensión y el quinto el Color (en el cuál utilizamos un hsla que establece
+    el tono, la saturación, la luminosidad y la opacidad)
+}
+
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+  background-color: #ff0000;
+  opacity: 1;
+} */
+
+
+
+
+
+/* ESTE CÓDIGO FUÉ EL SEGUNDO INTENTO DE SLIDER
+
+.slider-frame {
+  width: 1280px;
+  height: auto;
+  margin: 50px auto 0;
+  overflow: hidden;
+
+  animation: slide 15s infinite alternate ease-in-out;
+}
+
+.slider-frame ul {
+  display: flex;
+  padding: 0;
+  width: 300%;
+}
+
+.slider-frame li {
+  list-style: none;
+  width: 100%;
+}
+
+.slider-frame img {
+width: 100%;
+
+}
+
+@keyframes slide {
+  0% {margin-left: 0%;}
+  30% {margin-left: 0%;}
+
+  35% {margin-left: -100%;}
+  65% {margin-left: -100%;}
+
+  70% {margin-left: -200%;} 
+  95% {margin-left: -200%;}
+} */
+
+
+
+/* ESTE CÓDIGO FUÉ EL SEGUNDO INTENTO DE SLIDER
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+.slider input {
+  visibility: hidden;
+  display: none;
+}
+
+.buttons {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  bottom: 50px;
+  gap: 10px;
+}
+
+.buttons label {
+  width: 20px;
+  height: 10px;
+  background-color: white;
+  opacity: 0.5;
+  cursor: pointer;
+  z-index: 1;
+  transition: 300ms ease-in-out;
+}
+
+.buttons label:hover {
+  scale: 1.2;
+  opacity: 1;
+  background-color: #ff0000;
+}
+
+.slider input:nth-child(1):checked ~ .buttons label:nth-child(1),
+.slider input:nth-child(2):checked ~ .buttons label:nth-child(2),
+.slider input:nth-child(3):checked ~ .buttons label:nth-child(3) {
+  opacity: 1;
+  scroll-margin: 1.2;
+  width: 40px;
+}
+
+.content {
+  
+  position: relative;
+  width: 300vw;
+  display: flex;
+  transition: 400ms ease-in-out;
+ 
+}
+
+
+.primer_slide,
+.segundo_slide,
+.tercer_slide {
+  position: relative;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: start;
+ 
+}
+
+.primer_slide,
+.segundo_slide,
+.tercer_slide img {
+  
+  aspect-ratio: 16 / 9;
+  overflow-x: auto;
+  overflow-x: hidden;
+ 
+}
+
+
+
+.slider input:nth-child(1):checked ~ .content {
+  left: 0;
+}
+
+.slider input:nth-child(2):checked ~ .content {
+  left: -100vw;
+}
+
+.slider input:nth-child(3):checked ~ .content {
+  left: -200vw;
+}

@@ -1,0 +1,234 @@
+.logo {
+  max-width: 100%;
+  height: auto;
+  size: 30%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.header {
+  
+  position: fixed;
+  z-index: 2;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.navbar ul {
+  list-style-type: none;
+  background-color: #ff0000;
+  padding: 0px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.navbar a {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  text-decoration: none;
+  background-color: #ff0000;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: rgb(250, 192, 0);
+}
+
+.navbar li {
+  float: left;
+}
+
+
+body {
+    margin-top: 0px;
+    margin: 0px;
+    font-family: "Roboto", sans-serif;
+    background-image: url("TP Favoritos/clase/assets/img/Fondo-4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    font-family: 'Kanit', sans-serif;
+  }
+
+.cajas {
+  margin-top: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 25px;
+}
+
+.box {
+  width: 20%;
+  background-color: rgb(255, 0, 0);
+  border: 5px rgb(0, 0, 0);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.box img {
+  max-width: 100%;
+  height: auto;
+}
+
+.box h2 {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+.box p {
+  color: #f7f7f7;
+}
+
+.box:hover {
+  background-color: #f7f7f7;
+}
+
+.box:hover p {
+    color: black;
+  }
+
+.box:hover h2 {
+  color: black;
+}
+
+#box1 {
+  width: 20%;
+  background-color: rgb(255, 0, 0);
+  border: 5px rgb(0, 0, 0);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+#box1:hover {
+  background-color: rgba(51, 3, 39, 0.795);
+  background-image: url("TP Favoritos/clase/assets/img/carga.png");
+  background-repeat: no-repeat;
+  color: rgb(255, 255, 255);
+}
+
+#box1 img {
+  max-width: 100%;
+  height: auto;
+}
+
+#box1 h2 {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+h1,h2,h3,p {
+  font-family: "Kanit", sans-serif;
+}
+
+
+/* Estilo del Footer */
+
+li {
+  float: left;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.footer {
+  font-family: "Kanit", sans-serif;
+  width: 100%;
+}
+
+.container_final {
+  padding: 20px;
+}
+
+.container_final {
+  display: flex;
+  background-color: #ffcc00;
+}
+
+
+.container_final img {
+  width: 125px;
+}
+
+.container_final h1,
+p {
+  text-align: left;
+  margin-left: 25px;
+}
+
+.container_icons {
+  display: flex;
+}
+
+.container_social {
+  display: flex;
+}
+
+.container_social img {
+  width: 20px;
+  margin: 5px;
+}
+
+.container_app {
+  display: flex;
+  justify-content: end;
+  padding-right: 35px;
+  margin-left: 830px;
+}
+
+.container_app img {
+  width: 110px;
+  height: 40px;
+  margin: 5px;
+}
+
+.container_final_footer {
+  display: flex;
+}
+
+.navbar_footer {
+  display: flex;
+  justify-content: start;
+}
+.navbar_footer a {
+  color: rgb(0, 0, 0);
+  font-weight: 300;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+}
+
+.logo_footer {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-left: 628px;
+}
+
+.logo_footer img {
+  width: 45px;
+}
+
+.logo_footer h5 {
+  font-weight: 600;
+}
